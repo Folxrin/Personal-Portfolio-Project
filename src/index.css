@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+}
+
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.skill{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+ padding: 20px;
+
+
+
+
+}
+
+
+.image-container {
+  position: sticky;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-weight: 600;
+  justify-items: center ;
+  
+}
+
+.hover-text :hover{
+  opacity: 1;
+  font-weight: 600;
+  text-decoration:  2px underline #4EE1A0;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  align-content: center;
+  padding-left: 45%;
+  background: rgba(0, 0, 0, 0.7); 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: large;
+  padding: 10px;
+  border-radius: 10px;
+  
+  
+  
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+
+}
+
+.card-body {
+  margin-top: 20px;
+ 
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
